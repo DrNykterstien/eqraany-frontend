@@ -30,13 +30,13 @@ function BookCard(props) {
 
         <a
           className='no-underline'
-          href='http://www.google.com'>
+          href={data.bookUrl}>
           <h3 className='text-xl font-bold text-gray-700 hover:text-gray-900'>{data.title}</h3>
         </a>
         <a
           className='no-underline'
-          href='http://www.google.com'>
-          <h4 className='font-medium text-gray-600 hover:text-gray-700'>{data.author}</h4>
+          href={data.author.url}>
+          <h4 className='font-medium text-gray-600 hover:text-gray-700'>{data.author.name}</h4>
         </a>
       </Card>
     </>
